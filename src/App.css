@@ -36,3 +36,24 @@
     transform: rotate(360deg);
   }
 }
+
+.container {
+  display: grid;
+  gap: 1.5rem 1.5rem;
+  grid-template-areas:
+    'intro-container intro-container intro-container'
+    'about-container about-container about-container'
+    'footer-container footer-container footer-container';
+}
+
+.intro-container {
+  grid-area: intro-container;
+}
+
+.about-container {
+  grid-area: about-container;
+}
+
+.footer-container {
+  grid-area: footer-container;
+}
